@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 20px;
+  color: white;
+}
+
+h2 {
+  font-family: "Big Shoulders Display";
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2;
+  padding-bottom: 60px;
+  opacity: 0.7;
+  width: 200px;
+}
+
+img {
+  width: 50px;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  padding: 40px;
+  background-color: lavender;
+  max-width: 200px;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 6px 6px 0px 0px;
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 0px 6px 6px;
+}
+
+/* BUTTONS */
+
+button {
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  width: 150px;
+  height: 45px;
+  font-family: "Lexend Deca";
+  margin-bottom: 10px;
+}
+
+.sed-but {
+  color: hsl(31, 77%, 52%);
+}
+.suv-but {
+  color: hsl(184, 100%, 22%);
+}
+.lux-but {
+  color: hsl(179, 100%, 13%);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(31, 77%, 52%);
+  color: white;
+  border: 2px solid white;
+  transition: all ease 0.5s;
+}
+
+.suv button:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury button:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  color: hsl(179, 100%, 13%);
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 500px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .sedan {
+    border-radius: 6px 0px 0px 6px;
+  }
+
+  .luxury {
+    border-radius: 0px 6px 6px 0px;
+  }
+}
